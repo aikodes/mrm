@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MRM Task</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="text-gray-800">
+    <header class="bg-white border-b">
+      <div class="container m-auto py-2 px-6">
+        <a
+          class="flex items-center text-xl font-thin text-blue-600 tracking-wide"
+          href="#"
+        >
+          <svg
+            class="w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 128"
+          >
+            <defs>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+                <stop stop-color="#337AEE" offset="0%" />
+                <stop stop-color="#06BEDE" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b">
+                <stop stop-color="#337AEE" offset="0%" />
+                <stop stop-color="#06BEDE" offset="100%" />
+              </linearGradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <path
+                d="M48.578 2.313V13.88H11.566v69.398h37.012v11.566H5.931c-2.062 0-2.81-.214-3.564-.618a4.204 4.204 0 01-1.75-1.748C.216 91.723 0 90.975 0 88.912V8.244c0-2.062.215-2.81.618-3.564a4.204 4.204 0 011.749-1.749c.754-.403 1.502-.618 3.564-.618h42.647z"
+                fill="url(#a)"
+                transform="translate(16 15)"
+              />
+              <path
+                d="M47.422 0v11.566L80.73 8.244c-22.206 16.17-33.308 30-33.308 41.49 0 11.492 11.739 24.551 35.217 39.178L47.422 85.59v11.567l42.647-2.314c2.062 0 2.81-.214 3.564-.618a4.204 4.204 0 001.75-1.748c.402-.754.617-1.502.617-3.565-19.997-18.165-29.995-31.61-29.995-40.334 0-9.202 9.998-22.647 29.995-40.334 0-2.062-.215-2.81-.618-3.564a4.204 4.204 0 00-1.749-1.749c-.714-.382-1.423-.595-3.249-.616L47.422 0z"
+                fill="url(#b)"
+                transform="translate(16 15)"
+              />
+              <path
+                d="M63.422 15v11.566c22.361-1.768 33.542-3.696 33.542-5.783S85.784 16.768 63.422 15z"
+                fill="#01838D"
+              />
+              <path
+                d="M63.422 100.59v11.567c22.361-1.769 33.542-3.696 33.542-5.784 0-2.087-11.18-4.014-33.542-5.783z"
+                fill="#1F56BD"
+              />
+            </g>
+          </svg>
+          <div class="flex items-baseline">
+            <span class="font-bold">boss</span>job<span
+              class="font-bold text-3xl leading-none"
+              >.</span
+            >
+          </div>
+        </a>
+      </div>
+    </header>
+    <section class="bg-gray-200 shadow">
+      <form
+        class="js-search container m-auto py-6 px-6 md:flex md:items-center"
+        autocomplete="off"
+      >
+        <div class="relative flex-grow md:mr-3">
+          <input
+            aria-labelledby="searchbutton"
+            class="shadow appearance-none border rounded w-full py-2 md:py-4 pl-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            name="query"
+            placeholder="Search for Job Title or Company Name"
+            value=""
+            type="text"
+          />
+          <svg
+            class="absolutecenter-y | w-5 fill-current text-blue-600 absolute left-0 top-0"
+            style="left: .5rem;"
+            viewbox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"
+            />
+          </svg>
+        </div>
+        <button
+          class="mt-2 md:mt-0 bg-blue-500 hover:bg-blue-700 text-white font-bold w-full md:w-auto py-2 md:py-3 px-4 rounded focus:outline-none focus:shadow-outline flex-grow-0"
+          name="submit"
+          type="submit"
+          id="searchbutton"
+        >
+          Search Jobs
+        </button>
+      </form>
+    </section>
+    <aside>
+      <div class="container m-auto py-3 px-6">
+        <button class="flex items-center text-sm">
+          <svg
+            class="w-4 mr-1 fill-current stroke-current text-gray-500"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 512 512"
+          >
+            <path
+              d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+              fill="none"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M256 176v160M336 256H176"
+            />
+          </svg>
+          Filter
+        </button>
+      </div>
+    </aside>
+    <section class="border-t">
+      <div class="container m-auto pt-5 pb-6 px-6">
+        <p class="js-totaljobs text-sm text-gray-600"></p>
+        <div class="js-results"></div>
+        <div class="js-noresult hidden text-center">
+          <img
+            class="md:max-w-md md:mx-auto"
+            src="./assets/img/undraw_empty_xct9.png"
+            alt=""
+          />
+          <p>
+            The search
+            <span class="js-searchquery font-bold">
+              kekeke
+            </span>
+            did not match any jobs.
+          </p>
+          <hr class="my-4" />
+          <h6>Popular Searches</h6>
+          <div class="mt-4">
+            <a
+              class="mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  py-2 pl-2 pr-4 border border-blue-500 hover:border-transparent rounded inline-flex items-center"
+            >
+              <svg
+                class="w-4 fill-current mr-1"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"
+                />
+              </svg>
+              <span>Work from home</span>
+            </a>
+            <a
+              class="mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  py-2 pl-2 pr-4 border border-blue-500 hover:border-transparent rounded inline-flex items-center"
+            >
+              <svg
+                class="w-4 fill-current mr-1"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"
+                />
+              </svg>
+              <span>Retail</span>
+            </a>
+            <a
+              class="mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  py-2 pl-2 pr-4 border border-blue-500 hover:border-transparent rounded inline-flex items-center"
+            >
+              <svg
+                class="w-4 fill-current mr-1"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"
+                />
+              </svg>
+              <span>Temperature Screening</span>
+            </a>
+            <a
+              class="mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  py-2 pl-2 pr-4 border border-blue-500 hover:border-transparent rounded inline-flex items-center"
+            >
+              <svg
+                class="w-4 fill-current mr-1"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"
+                />
+              </svg>
+              <span>Delivery Driver</span>
+            </a>
+            <a
+              class="mt-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  py-2 pl-2 pr-4 border border-blue-500 hover:border-transparent rounded inline-flex items-center"
+            >
+              <svg
+                class="w-4 fill-current mr-1"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"
+                />
+              </svg>
+              <span>Contract</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

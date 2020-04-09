@@ -1,0 +1,16 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+button[disabled] {
+  opacity: 0.2;
+}
+
+.absolutecenter-y {
+  top: 50%;
+  bottom: auto;
+  transform: translate(0, -50%);
+}
